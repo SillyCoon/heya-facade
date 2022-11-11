@@ -1,20 +1,17 @@
 (ns heya-facade.core
-    (:require
-      [reagent.core :as r]
-      [reagent.dom :as d]))
-
-(defn main [])
+  (:require
+   [reagent.core :as r]
+   [reagent.dom :as d]
+   [lambdaisland.fetch :as fetch]))
 
 ;; -------------------------
 ;; Views
 
 (defn home-page []
-  [:div [:h2 "Welcome to ol"]])
+  [:div [:h2 "Hello World!"]])
 
 ;; -------------------------
 ;; Initialize app
-
-(+ 1 1)
 
 (defn mount-root []
   (d/render [home-page] (.getElementById js/document "app")))
