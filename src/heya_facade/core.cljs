@@ -8,8 +8,9 @@
 ;; Views
 
 (defn home-page []
-  [:div [:h2 "Hello World!"]])
+  [:div [:h2 {:class "text-lg font-medium"} "Hello World!"]])
 
+(+ 1 1)
 ;; -------------------------
 ;; Initialize app
 
